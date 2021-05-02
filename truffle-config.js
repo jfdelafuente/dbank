@@ -16,6 +16,22 @@ module.exports = {
       port: 8545,
       network_id: "*" // Match any network id
     },
+    teams: {
+      url:
+        "https://sandbox.truffleteams.com/0e2ac8d1-9860-4913-a5a6-682abf976699",
+      network_id: 1619866782914,
+    },
+    sandbox: {
+      provider: function() {
+        return new HDWalletProvider(
+          privateKeys.split(','), // Array of account private keys
+          'https://sandbox.truffleteams.com/0e2ac8d1-9860-4913-a5a6-682abf976699'
+        )
+      },
+      gas: 5000000,
+      gasPrice: 5000000000, // 5 gwei
+      network_id: 1619866782914
+    },
     kovan: {
       provider: function() {
         return new HDWalletProvider(
