@@ -18,19 +18,19 @@ module.exports = {
     },
     teams: {
       url:
-        "https://sandbox.truffleteams.com/0e2ac8d1-9860-4913-a5a6-682abf976699",
-      network_id: 1619866782914,
+        "https://sandbox.truffleteams.com/571d5e1e-6c54-4406-b659-18cea53c91b9",
+      network_id: 1620111875205,
     },
     sandbox: {
       provider: function() {
         return new HDWalletProvider(
           privateKeys.split(','), // Array of account private keys
-          'https://sandbox.truffleteams.com/0e2ac8d1-9860-4913-a5a6-682abf976699'
+          'https://sandbox.truffleteams.com/571d5e1e-6c54-4406-b659-18cea53c91b9'
         )
       },
       gas: 5000000,
       gasPrice: 5000000000, // 5 gwei
-      network_id: 1619866782914
+      network_id: 1620111875205
     },
     kovan: {
       provider: function() {
